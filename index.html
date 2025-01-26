@@ -5,84 +5,193 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FooseShoes</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
+  <!-- Header section begin -->
   <header class="header">
     <div class="header-top">
-      <div class="logo">FooseShoes</div>
-      <div class="header-actions">
-        <a href="#" class="login">Login or register</a>
-        <a href="#" class="cart">Cart</a>
+      <div class="container">
+        <div class="logo">
+              <p>FooseShoes</p>
+        </div>
+        
+        <div class="header-top-right">
+            <a href="#" class="search-icon"><i class="bi bi-search"></i></a>
+            <a href="#">Login or register</a>
+        </div>
       </div>
-    </div>
-    <nav class="nav">
-      <ul class="menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Pages</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    </div> 
   
+    <div class="container">
+      <div class="row">
+        <div class="header-menu">
+          <nav class="header-menu-left">
+            <ul>
+              <li class="active">
+                <li>
+                   <a href="#">Home</a>
+                </li>  
+                <li>
+                   <a href="#">Products</a>
+                </li>
+                <li>
+                   <a href="#">About</a>
+                </li>
+                <li>
+                   <a href="#">Pages</a>
+                </li>
+                <li>
+                   <a href="#">Blog</a>
+                </li>
+                <li>
+                   <a href="#">Contact</a>
+                </li>
+              </li>  
+            </ul>
+          </nav>
+        
+  
+    
+          <div class="header-menu-right d-flex gap-3">
+            <a href="#" class="d-flex align-items-center">
+              <i class="bi bi-heart"></i>
+              <span class="badge bg-secondary ms-1">30</span>
+            </a>
+            <a href="#" class="d-flex align-items-center">
+              <i class="bi bi-cart"></i>
+              <span class="badge bg-success ms-1">0</span>
+            </a>
+          </div>
+        </div>  
+      </div>  
+    </div>
+  </header>
 
+  <!-- Header section end -->
+
+  <!-- Banner section begin -->
   <section class="hero">
     <div class="hero-content">
       <img src="img/baner-section/banner.png" class="img-responsive" alt="banner">
       <div class="overlay">
+        <button class="price-tag">$145,99</button>
         <h1>Pink Shoes 2013 Collection</h1>
-        <p>Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat sit amet eu orci.</p>
-        <span class="price">$145.99</span>
+        <p>Nunc non fermentum nunc. Sed ut ante</p>
+        <p>eget leo tempor consequat sit amet eu orci.</p>
+        <p> Donec dignissim dolor eget..</p>
         <div class="hero-buttons">
-          <a href="#" class="btn primary-btn">Shop Now</a>
-          <a href="#" class="btn secondary-btn">Learn More</a>
+          <a href="#" class="btn"><i class="bi bi-eye"></i></a>
+        <a href="#" class="btn"><i class="bi bi-heart"></i></a>
+        <a href="#" class="btn"><i class="bi bi-share"></i></a>
+        <a href="#" class="btn"><i class="bi bi-cart"></i></a> 
         </div>
       </div>
+    </div>    
+  </section>
+  <!-- Banner section end -->
+  <!-- Links-section--> 
+  <div class="links-section">
+    <div class="link-item" data-target="on sale">Pink Shoes<br><span>$145.99</span></div>
+    <div class="link-item" data-target="special-offers">Anna Field<br><span>Limited Edition</span></div>
+    <div class="link-item" data-target="must-have">Prad<br><span>Summer is Coming</span></div>
+    <div class="link-item" data-target="all-colors">Casad<br><span>All Colors Available</span></div>
+    <div class="link-item" data-target="free-delivery">Mellow Yellow<br><span>Free Delivery</span></div>
+    <div class="highlight-bar"></div>
+  </div>
+  <!-- Links-section end-->
+  
+  <!-- Offers-section begin-->
+  <div class="offers-section">
+    <div class="offer-item" id="on-sale">
+      <img src="img/offer section/img1.png" alt="On Sale">
+      <button class="offer-label">On Sale</button>
+    </div>
+    <div class="offer-item" id="special-offers">
+      <img src="img/offer section/img2.png" alt="Special Offers">
+      <button class="offer-label">Special offers</button>
+    </div>
+    <div class="offer-item">
+      <img src="img/offer section/img3.png" alt="Must Have">
+      <button class="offer-label">Must Have</button>
+    </div>
+  </div>
+  <!-- Offers-section end-->
+  <!-- Content section begin -->
+  <section class="new arrivals container text-center">
+    <h2>New Arrivals</h2>
+    <div class="row">
+      
     </div>
   </section>
 
+  <!-- Content section end -->
+<!-- Footer section begin -->
+<div class="footer">
+  <div class="widgets">
+    <!-- Text Widget -->
+    <div class="widget text-widget">
+      <h4>Text Widget</h4>
+      <p>
+        Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit.
+        Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat
+        porttitor ligula, eget lacinia odio sem nec elit.
+      </p>
+    </div>
 
-  <div class="pre-footer">
-    <div class="footer-widgets">
-      <div class="widget text-widget">
-        <h3>Text Widget</h3>
-        <p>
-          Donec velit odio, faucibus id dolor sit amet, laoreet suscipit augue. Suspendisse vel nisl aliquam,
-          sollicitudin odio a, bibendum sapien.
-        </p>
-      </div>
+    <!-- Twitter Widget -->
+    <div class="widget twitter-widget">
+      <h4>Twitter Widget</h4>
+      <p>@ericafustero: Why thank you. Your work looks awesome by the way!</p>
+      <p>@treemelody 19 days ago.</p>
+      <p>@roymarvelous: You can seek a refund through TF if it is not as advertised - but it is :) 21 days ago.</p>
+    </div>
 
-      <div class="widget twitter-widget">
-        <h3>Twitter Widget</h3>
-        <p>
-          <strong>@username</strong>: Your tweet looks awesome! 29 days ago.
-        </p>
-        <p>
-          <strong>@anotheruser</strong>: Great work and effort through UI! 21 days ago.
-        </p>
-      </div>
-
-      <div class="widget flickr-widget">
-        <h3>Flickr Widget</h3>
-        <div class="flickr-gallery">
-          <img src="img/footer/mini_img.png" alt="Gallery">
-        </div>
+    <!-- Flickr Widget -->
+    <div class="widget flickr-widget">
+      <h4>Flickr Widget</h4>
+      <div class="flickr-gallery">
+        <img src="img/footer/img1.png" alt="Img1">
+        <img src="img/footer/img2.png" alt="Img2">
+        <img src="img/footer/img3.png" alt="Img3">
+        <img src="img/footer/img4.png" alt="Img4">
+        <img src="img/footer/img5.png" alt="Img5">
+        <img src="img/footer/img6.png" alt="Img6">
       </div>
     </div>
   </div>
 
-  <footer class="footer">
-    <div class="footer-bottom">
-      <p>Copyright © FooseShoes 2013. Designed by EnzoLiVolta.</p>
-      <div class="social-icons">
-        <a href="#"><img src="img/footer/facebook.png" alt="Facebook"></a>
-        <a href="#"><img src="img/footer/twitter.png" alt="Twitter"></a>
-        <a href="#"><img src="img/footer/linledin.png" alt="LinkedIn"></a>
-        <a href="#"><img src="img/footer/google.png" alt="Google"></a>
-      </div>
+  <!-- Newsletter and social icons -->
+  <div class="newsletter-container">
+    <div class="newsletter">
+      <input type="email" placeholder="Enter email for newsletter" />
+      <button>></button>
     </div>
-  </footer>
+    <div class="social-icons">
+      <a href="#"><img src="img/footer/facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="img/footer/twitter.png" alt="Twitter"></a>
+      <a href="#"><img src="img/footer/google.png" alt="Google"></a>
+      <a href="#"><img src="img/footer/linledin.png" alt="LinkedIn"></a>
+      <a href="#"><img src="img/footer/flickr.png" alt="More"></a>
+    </div>
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="footer-bottom">
+    <p>Copyright © FooseShoes 2013. Designed by EnzoLiVolta.</p>
+    <div class="footer-links">
+      <a href="#">Home</a> / 
+      <a href="#">Support</a> / 
+      <a href="#">Terms and Conditions</a> / 
+      <a href="#">Faqs</a> / 
+      <a href="#">Contact us</a>
+    </div>
+  </div>
+</div>
+<!-- Footer section end -->
 </body>
 </html>

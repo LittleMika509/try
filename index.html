@@ -79,16 +79,16 @@
     <div class="hero-content">
       <img src="img/baner-section/banner.png" class="img-responsive" alt="banner">
       <div class="overlay">
-        <button class="price-tag">$145,99</button>
+        <button class="price-tag-one">$145,99</button>
         <h1>Pink Shoes 2013 Collection</h1>
         <p>Nunc non fermentum nunc. Sed ut ante</p>
         <p>eget leo tempor consequat sit amet eu orci.</p>
         <p> Donec dignissim dolor eget..</p>
         <div class="hero-buttons">
           <a href="#" class="btn"><i class="bi bi-eye"></i></a>
-        <a href="#" class="btn"><i class="bi bi-heart"></i></a>
-        <a href="#" class="btn"><i class="bi bi-share"></i></a>
-        <a href="#" class="btn"><i class="bi bi-cart"></i></a> 
+          <a href="#" class="btn"><i class="bi bi-heart"></i></a>
+          <a href="#" class="btn"><i class="bi bi-share"></i></a>
+          <a href="#" class="btn"><i class="bi bi-cart"></i></a> 
         </div>
       </div>
     </div>    
@@ -121,18 +121,25 @@
     </div>
   </div>
   <!-- Offers-section end-->
+
   <!-- Content section begin -->
   <!-- New Arrivals Section -->
-  <section class="new-arrivals">
+<div class="products-section">
+  <div class="new-arrivals">
     <div class="container">
-        <h2>New Arrivals</h2>
+      <div class="title-container">
+          <h2 class="section-title">New arrivals on <span>FooseShoes</span></h2>
+          <button class="show-all-btn">Show All</button>
+        </div>
         <div class="row">
             <div class="col-md-4">
                 <div class="card">
                     <img src="img/new-arrivals/img1.png" class="card-img-top img-responsive" alt="EventOdd">
                     <div class="card-body">
-                      <button class="price-tag">$49.99</button>
-                      <div class="product-brand">EventOdd</div>
+                      <div class="price-brand">
+                        <span class="price-tag">$49.99</span>
+                        <span class="product-brand">EventOdd</span>
+                      </div>
                     </div>
                     <div class="card-buttons">
                       <a href="#" class="btn"><i class="bi bi-eye"></i></a>
@@ -145,9 +152,12 @@
             <div class="col-md-4">
                 <div class="card">
                     <img src="img/new-arrivals/img2.png" class="card-img-top img-responsive" alt="EventOdd">
+                    <button class="label">On Sale</button>
                     <div class="card-body">
-                        <button class="price-tag">$54.99</button>
-                        <div class="product-brand">EventOdd</div>
+                      <div class="price-brand">
+                        <span class="price-tag">$54.99</span>
+                        <span class="product-brand">EventOdd</span>
+                      </div>
                     </div>
                     <div class="card-buttons">
                           <a href="#" class="btn"><i class="bi bi-eye"></i></a>
@@ -161,8 +171,10 @@
                 <div class="card">
                     <img src="img/new-arrivals/img3.png" class="card-img-top img-responsive" alt="Buffalo Decollete">
                     <div class="card-body">
-                        <button class="price-tag">$59.99</button>
-                        <div class="product-brand">Buffalo Decollete</div>
+                      <div class="price-brand">
+                        <span class="price-tag">$49.99</span>
+                        <span class="product-brand">Buffalo Decollete</span>
+                      </div>
                     </div>
                     <div class="card-buttons">
                           <a href="#" class="btn"><i class="bi bi-eye"></i></a>
@@ -174,19 +186,24 @@
             </div>
         </div>
     </div>
-</section>
+  </div>
 
-<!-- Best Sellers Section -->
-<section class="best-sellers">
+  <!-- Best Sellers Section -->
+  <div class="best-sellers">
     <div class="container">
-        <h2>Best Sellers of the Month</h2>
+      <div class="title-container">
+        <h2 class="section-title">Best sellers of the <span>month</span></h2>
+        <button class="show-all-btn">Show All</button>
+      </div>
         <div class="row">
             <div class="col-md-4">
                 <div class="card">
                     <img src="img/best-sellers/img1.png" class="card-img-top img-responsive" alt="EventOdd">
                     <div class="card-body">
-                      <button class="price-tag">$49.99</button>
-                      <div class="product-brand">EventOdd</div>
+                      <div class="price-brand">
+                        <span class="price-tag">$54.99</span>
+                        <span class="product-brand">EventOdd</span>
+                      </div>
                     </div>
                     <div class="card-buttons">
                       <a href="#" class="btn"><i class="bi bi-eye"></i></a>
@@ -200,8 +217,10 @@
                 <div class="card">
                     <img src="img/best-sellers/img2.png" class="card-img-top img-responsive" alt="EventOdd">
                     <div class="card-body">
-                      <button class="price-tag">$49.99</button>
-                      <div class="product-brand">EventOdd</div>
+                      <div class="price-brand">
+                        <span class="price-tag">$54.99</span>
+                        <span class="product-brand">EventOdd</span>
+                      </div>
                     </div>
                     <div class="card-buttons">
                       <a href="#" class="btn"><i class="bi bi-eye"></i></a>
@@ -214,9 +233,12 @@
             <div class="col-md-4">
                 <div class="card">
                     <img src="img/best-sellers/img3.png" class="card-img-top img-responsive" alt="Buffalo Decollete">
+                    <button class="label out-of-stock">Out of Stock</button>
                     <div class="card-body">
-                      <button class="price-tag">$59.99</button>
-                      <div class="product-brand">Buffalo Decollete</div>
+                      <div class="price-brand">
+                        <span class="price-tag">$54.99</span>
+                        <span class="product-brand">Buffalo Decollet</span>
+                      </div>
                     </div>
                     <div class="card-buttons">
                       <a href="#" class="btn"><i class="bi bi-eye"></i></a>
@@ -228,15 +250,52 @@
             </div>
         </div>
     </div>
-</section>
+  </div>
+</div>
 <!-- Best Sellers Section end -->
 
 <!-- About us -->
 <section class="about-us">
-
-
+  <div class="container">
+    <div class="line">
+      <img src="img/best-sellers/Без назви.png" class="line" alt="Line">
+    </div>
+    <div class="about-content">
+      <div class="column">
+        <h4>Free Shipping</h4>
+        <p>
+          Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit.
+        </p>
+      </div>
+      <div class="column">
+        <h4>Testimonials</h4>
+        <p>
+          Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit.
+        </p>
+        <p class="author">- John Doe -</p>
+      </div>
+      <div class="column">
+        <h4>Blog news</h4>
+        <div class="blog-item">
+          <span class="blog-date">Apr <br> 01</span>
+          <div class="blog-text">
+            <strong>Nice & clean. The best for you blog!</strong>
+            <p>Vivamus metus turpis, bibendum vitae euismod vel, vulputate vel nibh.</p>
+          </div>
+        </div>
+        <div class="blog-item">
+          <span class="blog-date">Apr <br> 01</span>
+          <div class="blog-text">
+            <strong>What an ecommerce theme</strong>
+            <p>Donec erat sem, vehicula id dictum sit amet.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 <!-- About us end -->
+
 
   <!-- Content section end -->
    
